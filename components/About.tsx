@@ -13,10 +13,14 @@ export default function About({}: Props) {
         <motion.img 
         initial={{
             x: -200,
+            opacity: 0,
         }}
-        whileInView={{ x:0 }}
+        transition={{
+            duration: 1.2,
+        }}
+        whileInView={{ opacity: 1, x:0 }}
         viewport={{ once: true }}
-        src='' 
+        src='/components/assets/portfolio-about-profile.png' 
         />
     </div>
     );

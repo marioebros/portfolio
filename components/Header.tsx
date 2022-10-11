@@ -35,6 +35,11 @@ export default function Header({}: Props) {
                 bgColor='transparent'
             />
             <SocialIcon 
+                url="https://www.codewars.com/users/marioebros" 
+                fgColor='silver'
+                bgColor='transparent'
+            />
+            <SocialIcon 
                 url="https://twitter.com/MmeDollarize" 
                 fgColor='silver'
                 bgColor='transparent'
@@ -61,7 +66,7 @@ export default function Header({}: Props) {
             transition={{
                 duration: 1.5,
             }}
-            className="flex flex-row items-center text-silver-300 cursor-pointer"
+            className="flex flex-row items-center text-gray-300 cursor-pointer"
             >
             <SocialIcon
                 className='cursor-pointer'
@@ -69,7 +74,7 @@ export default function Header({}: Props) {
                 fgColor='silver'
                 bgColor='transparent' 
             />
-            <p className='uppercase hidden md:inline-flex text-sm text-silver-300'>
+            <p className='uppercase hidden md:inline-flex text-sm text-gray-300'>
                 Get In Touch!
             </p>
         </motion.div>
