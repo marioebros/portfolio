@@ -14,16 +14,16 @@ const Home: NextPage = () => {
 
       <Header />
 
-      <section id="hero" className='snap-start'>
+      <section id="hero" className="snap-start">
         <Hero />
       </section>
 
-      <section id='about' className='snap-center'>
+      <section id="about" className="snap-center">
         <About />
       </section>
 
       {/* Experience */}
-      <section>
+      <section id="experience" className="snap-center">
         <WorkExperience />
       </section>
 
