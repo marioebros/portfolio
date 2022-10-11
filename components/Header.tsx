@@ -6,7 +6,9 @@ type Props = {}
 export default function Header({}: Props) {
   return (
     <header className='sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center'>
-        <div className='flex flex-row items-center'>
+        <motion.div className='flex flex-row items-center'>
+            
+            
             {/* Social Icons */}
             <SocialIcon 
                 url="https://github.com/marioebros" 
@@ -29,7 +31,7 @@ export default function Header({}: Props) {
                 fgColor='silver'
                 bgColor='transparent'
             />
-        </div>
+        </motion.div>
 
         <div>
             <SocialIcon
