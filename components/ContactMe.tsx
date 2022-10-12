@@ -1,10 +1,22 @@
 import React from "react";
 import { DevicePhoneMobileIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
+// import { useForm, submitHandler } from "react-hook-form";
 
-type Props = {}
+type Inputs = {
+    name: string;
+    email: string;
+    subject: string;
+    message: string;
+};
+
+type Props = {};
 
 function ContactMe({}: Props) {
-    const 
+    const { register, handleSubmit } = useForm<Inputs>();
+
+    const onSubmit: SubmitHandler<Inputs> = (formData) => {
+        window.location.href = `mailto:`
+    };
 
   return (
     <div className="h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
@@ -35,7 +47,10 @@ function ContactMe({}: Props) {
                 </div>
             </div>
 
-            <form className="flex flex-col space-y-2 w-fit mx-auto">
+            <form 
+                onSubmit={handleSubmit(onSubmit)}
+                className="flex flex-col space-y-2 w-fit mx-auto"
+            >
                 <div className="flex space-x-2">
                     <input placeholder="Name" className="contactInput" type="text" />
                     <input placeholder="Email" className="contactInput" type="email" />
