@@ -18,7 +18,7 @@ function Projects({}: Props) {
 
                     <div className="space-y-10 px-0 md:px-10 max-w-6xl">
                         <h4 className="text-4xl font-semibold text-center">
-                            <span className="underline decoration-[#F7AB0A]/50">
+                            <span className="underline decoration-[#FFCC00]/50">
                                 Case Study {i+1} of {projects.length}:
                             </span>{" "} 
                             G's Restaurant Site
@@ -28,7 +28,7 @@ function Projects({}: Props) {
             ))}
         </div>
 
-        <div className="w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12" />
+        <div className="w-full absolute top-[25%] bg-[#FFCC00]/50 left-0 h-[500px] -skew-y-12 -skew-x-12" />
     </div>
   );
 }

@@ -32,7 +32,7 @@ export default function About({}: Props) {
         <div className='space-y-10 px-0 md:px-10'>
             <h4 className='text-4xl font-semibold'>
                 Who Am{" "}
-                <span className='underline decoration-[#F7AB0A]/50'>I...</span>{" "}
+                <span className='underline decoration-[#FFCC00]/50'>I...</span>{" "}
             </h4>
             <p className='text-lg'>
                 A disciplined creative of 14-years, who is actively seeking to leverage
