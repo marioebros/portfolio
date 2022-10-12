@@ -10,7 +10,7 @@ import ContactMe from "../components/ContactMe";
 
 const Home: NextPage = () => {
   return (
-    <div className='bg-[rgb(20,20,20)] text-gray-300 h-screen snap-y snap-mandatory overflow-scroll z-0'>
+    <div className='bg-[rgb(20,20,20)] text-gray-300 h-screen snap-y snap-mandatory overflow-y-scroll z-0'>
       <Head>
         <title>Mario's Portfolio</title>
       </Head>
