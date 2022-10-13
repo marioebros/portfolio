@@ -20,7 +20,7 @@ function Skills({}: Props) {
         </h3>
 
         <div className="grid grid-cols-4 gap-5">
-            <Skill />
+            <Skill /> 
             <Skill />
             <Skill />
             <Skill />

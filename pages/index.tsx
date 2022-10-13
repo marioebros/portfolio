@@ -50,6 +50,9 @@ const Home: NextPage = () => {
               src="" 
               alt="" />
           </div>
+          <div>
+            <a target="_blank" href="https://icons8.com/icon/20909/html-5">Html 5</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+          </div>
         </footer>
       </Link>
     </div>
