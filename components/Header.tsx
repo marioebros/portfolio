@@ -29,16 +29,16 @@ export default function Header({ socials }: Props) {
             
             {/* Social Icons */}
 
-            {/* {socials.map((social) => (
+            {socials.map((social) => (
                 <SocialIcon 
                 key={social._id}
                 url={social.url}
                 fgColor='silver'
                 bgColor='transparent'
             />
-            ))} */}
+            ))}
 
-            <SocialIcon 
+            {/* <SocialIcon 
                 url="https://github.com/marioebros" 
                 fgColor='silver'
                 bgColor='transparent'
@@ -63,7 +63,7 @@ export default function Header({ socials }: Props) {
                 url="https://www.instagram.com/issa_mmeh/" 
                 fgColor='silver'
                 bgColor='transparent'
-            />
+            /> */}
         </motion.div>
 
             <Link href="#contact">
