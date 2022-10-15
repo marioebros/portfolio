@@ -11,6 +11,9 @@ import Link from "next/link";
 import { Experience, PageInfo, Project, Skill, Social } from "../typings";
 import { fetchPageInfo } from "../utils/fetchPageInfo";
 import { fetchSocial } from "../utils/fetchSocials";
+import { fetchExperiences } from "../utils/fetchExperiences";
+import { fetchSkills } from "../utils/fetchSkills";
+import { fetchProjects } from "../utils/fetchProjects";
 
 type Props = {
   pageInfo: PageInfo;
