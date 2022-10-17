@@ -37,33 +37,6 @@ export default function Header({ socials }: Props) {
                 bgColor='transparent'
             />
             ))}
-
-            {/* <SocialIcon 
-                url="https://github.com/marioebros" 
-                fgColor='silver'
-                bgColor='transparent'
-            />
-            <SocialIcon 
-                url="https://www.linkedin.com/in/mariomeliz/" 
-                fgColor='silver'
-                bgColor='transparent'
-            />
-            <SocialIcon 
-                url="https://www.codewars.com/users/marioebros" 
-                fgColor='silver'
-                bgColor='transparent'
-            />
-            <SocialIcon 
-                url="https://twitter.com/MmeDollarize" 
-                fgColor='silver'
-                bgColor='transparent'
-                
-            />
-            <SocialIcon 
-                url="https://www.instagram.com/issa_mmeh/" 
-                fgColor='silver'
-                bgColor='transparent'
-            /> */}
         </motion.div>
 
             <Link href="#contact">
