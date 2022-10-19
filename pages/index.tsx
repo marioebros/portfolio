@@ -17,13 +17,13 @@ import { fetchProjects } from "../utils/fetchProjects";
 
 type Props = {
   pageInfo: PageInfo;
-  experience: Experience[];
+  experiences: Experience[];
   skills: Skill[];
   projects: Project[];
   socials: Social[];
-}
+};
 
-const Home = ({pageInfo, experience, projects, skills, socials}: Props) => {
+const Home = ({pageInfo, experiences, projects, skills, socials}: Props) => {
   return (
     <div className='bg-[rgb(20,20,20)] text-gray-300 h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-thin scrollbar-track-gray-500/20 scrollbar-thumb-[#FFCC00]/80'>
       <Head>
@@ -41,7 +41,7 @@ const Home = ({pageInfo, experience, projects, skills, socials}: Props) => {
       </section>
 
       <section id="experience" className="snap-center">
-        <WorkExperience experiences={experience} />
+        <WorkExperience experiences={experiences} />
       </section>
 
       <section id="skills" className="snap-start">
@@ -61,8 +61,9 @@ const Home = ({pageInfo, experience, projects, skills, socials}: Props) => {
           <div className="flex items-center justify-center">
             <img
               className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0" 
-              src="" 
-              alt="" />
+              src="../components/assets/1.png" 
+              alt="" 
+            />
           </div>
         </footer>
       </Link>
@@ -72,8 +73,8 @@ const Home = ({pageInfo, experience, projects, skills, socials}: Props) => {
 
 export default Home;
 
- export const getStaticProps: GetStaticProps<Props> = async () => {
-  const pageInfo: PageInfo = await fetchPageInfo();
+ export async function getStaticProps() {
+  const pageInfo: PageInfo[] = await fetchPageInfo();
   const experiences: Experience[] = await fetchExperiences();
   const skills: Skill[] = await fetchSkills();
   const projects: Project[] = await fetchProjects();
@@ -91,5 +92,5 @@ export default Home;
     // - When a request comes in 
     // - At most once every 10 seconds
     revalidate: 10,
-   };  
-}; 
+  };
+} 
