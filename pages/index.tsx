@@ -1,4 +1,4 @@
-import type { NextPage } from "next";
+import type { GetStaticProps } from "next";
 import Head from "next/head";
 import About from "../components/About";
 import Header from "../components/Header";
@@ -27,7 +27,7 @@ const Home = ({pageInfo, experience, projects, skills, socials}: Props) => {
   return (
     <div className='bg-[rgb(20,20,20)] text-gray-300 h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-thin scrollbar-track-gray-500/20 scrollbar-thumb-[#FFCC00]/80'>
       <Head>
-        <title>Mario's Portfolio</title>
+        <title>{pageInfo?.name} - Portfolio</title>
       </Head>
 
       <Header socials={socials} />
