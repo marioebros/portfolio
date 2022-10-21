@@ -14,6 +14,7 @@ import { fetchSocial } from "../utils/fetchSocials";
 import { fetchExperiences } from "../utils/fetchExperiences";
 import { fetchSkills } from "../utils/fetchSkills";
 import { fetchProjects } from "../utils/fetchProjects";
+import { urlFor } from "../sanity";
 
 type Props = {
   pageInfo: PageInfo;
@@ -61,7 +62,7 @@ const Home = ({pageInfo, experiences, projects, skills, socials}: Props) => {
           <div className="flex items-center justify-center">
             <img
               className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0" 
-              src="../components/assets/1.png" 
+              src="./assets/2.png"
               alt="" 
             />
           </div>
