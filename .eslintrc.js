@@ -5,6 +5,7 @@ module.exports = {
   },
   extends: [
     "eslint:recommended",
+    "next",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@next/next/recommended",
