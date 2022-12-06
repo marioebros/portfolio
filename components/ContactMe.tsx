@@ -1,3 +1,6 @@
+/* eslint-disable no-empty-pattern */
+/* eslint-disable @typescript-eslint/ban-types */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React from "react";
 import { DevicePhoneMobileIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import { useForm, SubmitHandler } from "react-hook-form";
@@ -11,7 +14,7 @@ type Inputs = {
 
 type Props = {};
 
-function ContactMe({}: Props) {
+function ContactMe({}: Props): JSX.Element {
     const { 
         register, 
         handleSubmit, 
@@ -30,7 +33,7 @@ function ContactMe({}: Props) {
         <div className="flex flex-col space-y-10">
             <h4 className="text-4xl font-semibold text-center">
                 {" "}
-                <span className="decoration-[#FFCC00]/50 underline">Let's Talk.</span>
+                <span className="decoration-[#FFCC00]/50 underline">Talk Soon.</span>
             </h4>
 
             <div className="space-y-10">

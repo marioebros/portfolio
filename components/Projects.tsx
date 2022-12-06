@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React from "react";
 import { motion } from "framer-motion";
 import { Project } from "../typings";
@@ -13,12 +14,12 @@ function Projects({ projects }: Props) {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0">
+        className="h-full w-full relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0">
         <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-300 text-2xl">
             Projects
         </h3>
 
-        <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-thin scrollbar-track-gray-500/20 scrollbar-thumb-[#FFCC00]/80">
+        <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-500/20 scrollbar-thumb-[#FFCC00]/80">
             {projects?.map((project, i) => (
                 <div 
                     key={project._id}

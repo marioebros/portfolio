@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/ban-types */
+/* eslint-disable no-empty-pattern */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React from 'react'
 import { motion } from "framer-motion";
 

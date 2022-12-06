@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
