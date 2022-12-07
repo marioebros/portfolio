@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-no-undef */
+/* eslint-disable react/jsx-no-comment-textnodes */
 /* eslint-disable react/react-in-jsx-scope */
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import type { GetStaticProps } from "next";
@@ -61,7 +63,8 @@ const Home = ({pageInfo, experiences, projects, skills, socials}: Props) => {
       <Link href="#hero">
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center">
-            <img
+            // eslint-disable-next-line react/jsx-no-undef
+            <Image
               className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0" 
               src="../assets/2.png"
               alt="" 
