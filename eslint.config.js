@@ -1,10 +1,11 @@
-const react = require('eslint-plugin-react');
-const globals = require('globals');
+/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable no-undef */
+const react = require("eslint-plugin-react");
+const globals = require("globals");
 
 module.exports = [
-  …
   {
-    files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
+    files: ["**/*.{js,jsx,mjs,cjs,ts,tsx}"],
     plugins: {
       react,
     },
@@ -20,10 +21,9 @@ module.exports = [
     },
     rules: {
       // ... any rules you want
-      'react/jsx-uses-react': 'error',
-      'react/jsx-uses-vars': 'error',
-     },
+      "react/jsx-uses-react": "error",
+      "react/jsx-uses-vars": "error",
+    },
     // ... others are omitted for brevity
   },
-  …
 ];
