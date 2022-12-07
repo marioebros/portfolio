@@ -46,12 +46,15 @@ function Projects({ projects }: Props) {
 
                     <div className="flex items-center space-x-2 justify-center">
                         {project?.technologies.map((technology) => (
+                            // eslint-disable-next-line react/jsx-key
+                            <picture>
                             <img
                                 className="h-10 w-10"
                                 key={technology._id}
                                 src={urlFor(technology.image).url()}
                                 alt=""
                             />
+                            </picture>
                         ))}
                     </div>
 
