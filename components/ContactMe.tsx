@@ -49,7 +49,7 @@ function ContactMe({}: Props): JSX.Element {
 
                 <div className="flex items-center space-x-5 justify-center">
                     <MapPinIcon className="text-[#FFCC00] h-7 w-7 animate-pulse" />
-                    <p className="text-2xl">Los Angeles, CA</p>
+                    <p className="text-2xl">Simi Valley, CA</p>
                 </div>
             </div>
 
