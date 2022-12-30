@@ -28,7 +28,7 @@ export default function ExperienceCard({ experience }: Props) {
             <h4 className="text-4xl font-light">{experience.jobTitle}</h4>
             <p className="font-bold text-2xl mt-1">{experience.company}</p>
             <div className="flex space-x-2 my-2">
-                {experience.technologies.map((technology) => (
+                {/* {experience.technologies.map((technology) => (
                     // eslint-disable-next-line react/jsx-key
                     <picture>
                         <img 
@@ -37,7 +37,7 @@ export default function ExperienceCard({ experience }: Props) {
                         src={urlFor(technology.image).url()}
                     />
                     </picture>
-                ))}
+                ))} */}
             </div>
             <p className="uppercase py-5 text-gray-300">
                 {new Date(experience.dateStarted).toDateString()} -{" "}
